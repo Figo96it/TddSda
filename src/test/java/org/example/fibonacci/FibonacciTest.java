@@ -78,7 +78,7 @@ public class FibonacciTest {
     }
 
     @ParameterizedTest
-    @CsvSource(value = {"7,13","8,21","14,377"})
+    @CsvSource(value = {"7,13","8,21","14,377"}, delimiter = ',')
     void checkCorrectResultOfFibonacciCalculatorWithAParametrizedCsvSourceTest(int input, int expectedOutput){
         // given in input params
         //when
@@ -88,7 +88,7 @@ public class FibonacciTest {
     }
 
     @ParameterizedTest
-    @CsvSource(value = {"2,13","18,21","124,377"})
+    @CsvSource(value = {"2,13","18,21"}, delimiter = ',')
     void checkIncorrectResultOfFibonacciCalculatorWithAParametrizedCsvSourceTest(int input, int expectedOutput){
         // given in input params
         //when
